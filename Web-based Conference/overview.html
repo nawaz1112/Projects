@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+   <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <style>
+  .section-about{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+  }
+  </style>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Conference</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="secondary-header">
+      <div class="secondary-overlay">     
+        <nav class="transparent">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="index.html" class="brand-logo">Web Conference</a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                 <i class="material-icons">menu</i>
+               </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="overview.html">Overview</a>
+                </li>
+                <li>
+                  <a href="licences.html">Licences</a>
+                </li>
+                <li>
+                  <a href="publications.html">Publications</a>
+                </li>
+                <li>
+                  <a href="signup.html">Sign up</a>
+                </li>
+                <li>
+                    <a href="#login-modal" class="btn grey darken-3 modal-trigger">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+      <!-- Side nav -->
+      <ul class="side-nav " id="mobile-nav">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="overview.html">Overview</a>
+        </li>
+        <li>
+          <a href="licences.html">Licences</a>
+        </li>
+        <li>
+          <a href="publications.html">Publications</a>
+        </li>
+        <li>
+          <a href="signup.html">Sign up</a>
+        </li>
+      </ul>
+   </div>
+  </header>
+
+<!--Section About us-->
+<section class="section">
+  <div class="row">
+    <div class="col s12">
+      <div class="container section-about">
+        <h3>Conference Management Using EasyChair</h3>
+        <p >
+            EasyChair is a conference management system that is flexible, easy to use, and has many features to make it suitable for various conference models. It is currently probably the most commonly used conference management system.
+        <br>         
+            Our users include top conferences in several areas, for example, in World Wide Web and in Bioinformatics. Our users range from small workshops with around 10 submissions to big conferences having thousands of submissions.
+        <br>
+            The first version of EasyChair was implemented in 2002. It was used by 12 conferences in 2002-2004 and by 66 conferences in 2005. We believe that since 2006 we have become number one conference management system in the number of conferences, users and submissions.
+        </p>
+        <h4>What EasyChair Helps You to Do</h4>
+        <p >
+            EasyChair was designed to help conference organisers to cope with the complexity of the refereeing process. The current version support
+        </p>
+        <ol>
+          <li>management and monitoring of the program committee.</li>
+          <li>management and monitoring of the program committee.</li>
+          <li>automatic paper submission;</li>
+          <li>paper assignment based on the preferences of PC members.</li>
+          <li>list of the latest events.  </li>
+          <li>submission of reviews;</li>
+          <li> sending email to PC members, referees and authors.</li>
+          <li>monitoring email.</li>
+          <li>online discussion of papers.</li>
+          <li> the author response (aka rebuttal) phase, when the author can respond to the reviews</li>
+          <li>preparation of conference proceedings.</li>
+          <li> generation and publishing of conference program</li>
+          <li> generation of conference brochures with program</li>
+          <li>  conference program and proceedings on flash drives</li>
+        </ol>
+        
+      </div>
+    </div>    
+  </div>
+</section>
+
+<!-- footer-->
+<footer class="section grey darken-4 white-text center">
+    <p class="flow-text">Web-based Conference Management System &copy; 2018</p>
+  </footer>
+
+<!--Models-->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <p>Login to access your account dashboard</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey darken-3">
+        <i class="fa fa-sync"></i> Forgot Password</a>
+      <a href="#!" class="modal-action modal-close btn grey darken-3">
+        <i class="fa fa-lock"></i> Login</a>
+    </div>
+  </div>
+ 
+<!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    // Init Side nav
+    $('.button-collapse').sideNav();
+    // Init Modal
+    $('.modal').modal();
+  }
+  )
+
+  </script>
+</body>
+
+</html>
